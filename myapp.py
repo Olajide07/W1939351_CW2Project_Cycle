@@ -1,21 +1,3 @@
-import streamlit as st
-import time
-import pandas as pd
-import numpy as np
-
-
-st.title ("Hello My App")
-
-df2= pd.DataFrame( 
-    np.random.randn(10, 2),  
-    columns=['x', 'y'])
-st.line_chart(df2) 
-
-
-df1= pd.DataFrame( 
-    np.random.randn(500, 2) / [50 , 50] + [51.5080, - 0.1281],  
-    columns=['lat', 'lon'])
-st.map(df1)
 
 import streamlit as st
 import pandas as pd
